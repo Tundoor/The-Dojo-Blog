@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(243, 243, 243);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+  background-color: rgb(157, 0, 0);
+  height: 10%;
+  display: flex;
+  margin: 0;
+  box-shadow: 1px 1px 20px 3px rgba(39, 39, 39, 0.878);
+}
+
+.blogName {
+    margin-left: 40px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.links {
+    margin: auto 40px auto auto;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.links a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
