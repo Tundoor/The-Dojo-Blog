@@ -5,24 +5,24 @@ function Home () {
     
   // initializes our blogs as null
   const [blogs, setBlogs ] = useState(null)
+  // If theres still loading happening
+  const [ isLoading, setLoading ] = useState(true)
 
-   const handleDelete = (id) => {
-     const newBlogs = blogs.filter( blog => blog.id !== id)
-     setBlogs(newBlogs);
-   }
 
   // fetches from our JSON-server 
    useEffect(() => {
     fetch("http://localhost:8000/blogs")
      .then(res => { return res.json() })
      .then((data) => {
-      setBlogs(data)
+      setBlogs(data);
+      setLoading(false)
      })
    }, [])
 
   return (
     <div className="home">
-      { blogs && <BlogList blogs={blogs}  title="All Blogs" handleDelete={handleDelete} />}
+      { isLoading && <div>Loading...</div>}
+      { blogs && <BlogList blogs={blogs}  title="All Blogs"  />}
   </div>
 );
 }
