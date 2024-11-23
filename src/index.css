@@ -16,6 +16,8 @@ body {
     margin-left: 40px;
     color: white;
     font-size: 1.5rem;
+    font-family: cursive;
+    font-style: italic;
 }
 
 .links {
@@ -26,14 +28,35 @@ body {
     text-decoration: none;
     padding: 20px;
     font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
 
 .links a:hover {
     color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 .content {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.blog-preview {
+    border: 2px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 20px 3px rgba(255, 0, 0, 0.3);
+}
+
+.blog-preview h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+.blog-preview:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.354);
 }
